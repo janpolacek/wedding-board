@@ -1,7 +1,7 @@
 <template>
-  <div class="w-screen h-screen content-center flex flex-col">
-      <h1 class="content-center flex text-5xl md:text-6xl text-red-600">Daniela & Ján</h1>
-      <h2 class="content-center flex text-3xl md:text-4xl text-red-500 mb-6">♥ 29.05.2021 ♥</h2>
+  <div class="w-screen h-screen content-center justify-center flex flex-col">
+      <h1 class="text-center text-5xl md:text-6xl text-red-600">Daniela & Ján</h1>
+      <h2 class="text-center text-3xl md:text-4xl text-red-500 mb-6">♥ 29.05.2021 ♥</h2>
       <div class="flex justify-center">
         <CountDown />
       </div>
