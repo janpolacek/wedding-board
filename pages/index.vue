@@ -1,40 +1,21 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">wedding-board</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="w-screen h-screen content-center flex flex-col">
+      <h1 class="content-center flex text-5xl md:text-6xl text-red-600">Daniela & Ján</h1>
+      <h2 class="content-center flex text-3xl md:text-4xl text-red-500 mb-6">♥ 29.05.2021 ♥</h2>
+      <div class="flex justify-center">
+        <CountDown />
       </div>
-    </div>
   </div>
 </template>
 
 <script>
-export default {}
+import CountDown from '@/components/CountDown'
+export default {
+  components: { CountDown }
+}
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -54,15 +35,4 @@ export default {}
   letter-spacing: 1px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
